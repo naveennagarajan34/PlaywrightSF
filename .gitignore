@@ -1,0 +1,44 @@
+# Node.js dependencies
+node_modules/
+
+# Compiled output
+build/
+dist/
+
+# Playwright-specific
+test-results/
+playwright-report/
+**/trace.zip
+**/screenshot/**
+**/video/**
+
+# Debug files
+*.log
+*.debug
+
+# Environment files
+.env
+.env.*
+!.env.example
+
+# Temporary files
+tmp/
+temp/
+
+# IDE specific files
+.idea/
+.vscode/
+
+# System files
+.DS_Store
+
+# Coverage data
+coverage/
+
+# Cucumber reports
+cucumber-report.html
+cucumber-json-report.json
+
+#Ignore allure results
+allure-results/
+allure-report/
