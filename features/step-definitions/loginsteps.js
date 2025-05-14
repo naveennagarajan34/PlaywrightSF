@@ -3,7 +3,7 @@ const { expect } = require("@playwright/test");
 const fs = require("fs");
 
 Given("I launch Scripture Forge", async function () {
-  await this.page.goto("https://qa.scriptureforge.org");
+  // await this.page.goto("https://qa.scriptureforge.org");
 });
 
 When("I login with {string} and {string}", async function (email, password) {

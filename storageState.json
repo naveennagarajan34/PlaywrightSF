@@ -2,17 +2,17 @@
   "cookies": [
     {
       "name": "_csrf",
-      "value": "i2IuH4sZspEgdY7mqNkRrub6",
+      "value": "WJt7520mI4R96u_F0RN3jjx4",
       "domain": "dev-sillsdev.auth0.com",
       "path": "/usernamepassword/login",
-      "expires": 1748089199.918707,
+      "expires": 1748095442.098007,
       "httpOnly": true,
       "secure": true,
       "sameSite": "Lax"
     },
     {
       "name": ".AspNetCore.Antiforgery.NGLNH2tSY-I",
-      "value": "CfDJ8HGAO1rqZodEiqVbnudAlBtUZ0LshlCnrwLjzUnbRGWx-gJXwRltkiy9SZzL_knKwJ7k0_Avrpe00pYLudWgPc0QcXTP4zqH1eFLJZXepqX_BgVKe4T-ZKqAeEaWr0fcseeAQ0l_QuvD2jMvBMoFMDE",
+      "value": "CfDJ8HGAO1rqZodEiqVbnudAlBtnox4UTU8Y6SVB9M4kr_7Vz4LnOJ5QcsKEwYzVFbwCPFAPnOPYArB8NRnUr2ockKVLtKr9nOVl7yUo0TrMcep4eLY8crr_FzqzxGQNOCtbnGBkBixIcZI0PQSNs9OZ8s0",
       "domain": "qa.scriptureforge.org",
       "path": "/",
       "expires": -1,
@@ -25,74 +25,74 @@
       "value": "c%3Den%7Cuic%3Den",
       "domain": "qa.scriptureforge.org",
       "path": "/",
-      "expires": 1778761199,
+      "expires": 1778767441,
       "httpOnly": false,
       "secure": true,
       "sameSite": "Strict"
     },
     {
       "name": "_ga_SVKBDV7K3Q",
-      "value": "GS2.1.s1747225199$o1$g0$t1747225199$j0$l0$h0",
+      "value": "GS2.1.s1747231441$o1$g0$t1747231441$j0$l0$h0",
       "domain": ".scriptureforge.org",
       "path": "/",
-      "expires": 1781785199.42801,
+      "expires": 1781791441.616194,
       "httpOnly": false,
       "secure": false,
       "sameSite": "Lax"
     },
     {
       "name": "_ga",
-      "value": "GA1.1.1815854903.1747225199",
+      "value": "GA1.1.1580268253.1747231442",
       "domain": ".scriptureforge.org",
       "path": "/",
-      "expires": 1781785199.428155,
+      "expires": 1781791441.616359,
       "httpOnly": false,
       "secure": false,
       "sameSite": "Lax"
     },
     {
       "name": "did",
-      "value": "s%3Av0%3A9299589d-fdac-4f8c-90cb-d30cb0f07baa.dtGIdTma0bs8ftbCz5szCzUCpl9IOZKchN%2BduZB2bGI",
+      "value": "s%3Av0%3Aa70b11d2-7e0c-4f78-b151-040e9d4ec7df.3TwHyQKqY6QOoCEK5yZ83LFf6fZwpYCBqY8sWwWO7y0",
       "domain": "dev-sillsdev.auth0.com",
       "path": "/",
-      "expires": 1778782799.616175,
+      "expires": 1778789041.754605,
       "httpOnly": true,
       "secure": true,
       "sameSite": "None"
     },
     {
       "name": "auth0",
-      "value": "s%3Av1.gadzZXNzaW9ugqZoYW5kbGXEQBetJWZvcOg_NckXEhGPU4bXXpZpe2xmlGBYajjIT6dpSZ8BgIFcxAfmxGctnoK4NrkD8rpcY4bkd60FX3_YcK2mY29va2llg6dleHBpcmVz1_8NHO8AaCh--a5vcmlnaW5hbE1heEFnZc4PcxQAqHNhbWVTaXRlpG5vbmU.9TfJyuvnhX8yuX1nVEl%2F1zC6F%2F6s1JYx79J73A8Q7pI",
+      "value": "s%3Av1.gadzZXNzaW9ugqZoYW5kbGXEQKrYsNa5uVukWGjLxKOS-nhvZ_J13gAaqPKN2Gteb9RxxMVL-eGZLaUl0yfUZVF_hS9WzZnSjz9WAch4v7KQ7xWmY29va2llg6dleHBpcmVz1_9xucUAaCiXW65vcmlnaW5hbE1heEFnZc4PcxQAqHNhbWVTaXRlpG5vbmU.iz%2BIwgWoCwwOrjGKlSWzJ9UAa%2BmJfDzoIuyqg7GQaUY",
       "domain": "dev-sillsdev.auth0.com",
       "path": "/",
-      "expires": 1747484399.616256,
+      "expires": 1747490641.754683,
       "httpOnly": true,
       "secure": true,
       "sameSite": "None"
     },
     {
       "name": "did_compat",
-      "value": "s%3Av0%3A9299589d-fdac-4f8c-90cb-d30cb0f07baa.dtGIdTma0bs8ftbCz5szCzUCpl9IOZKchN%2BduZB2bGI",
+      "value": "s%3Av0%3Aa70b11d2-7e0c-4f78-b151-040e9d4ec7df.3TwHyQKqY6QOoCEK5yZ83LFf6fZwpYCBqY8sWwWO7y0",
       "domain": "dev-sillsdev.auth0.com",
       "path": "/",
-      "expires": 1778782799.616281,
+      "expires": 1778789041.754711,
       "httpOnly": true,
       "secure": true,
       "sameSite": "Lax"
     },
     {
       "name": "auth0_compat",
-      "value": "s%3Av1.gadzZXNzaW9ugqZoYW5kbGXEQBetJWZvcOg_NckXEhGPU4bXXpZpe2xmlGBYajjIT6dpSZ8BgIFcxAfmxGctnoK4NrkD8rpcY4bkd60FX3_YcK2mY29va2llg6dleHBpcmVz1_8NHO8AaCh--a5vcmlnaW5hbE1heEFnZc4PcxQAqHNhbWVTaXRlpG5vbmU.9TfJyuvnhX8yuX1nVEl%2F1zC6F%2F6s1JYx79J73A8Q7pI",
+      "value": "s%3Av1.gadzZXNzaW9ugqZoYW5kbGXEQKrYsNa5uVukWGjLxKOS-nhvZ_J13gAaqPKN2Gteb9RxxMVL-eGZLaUl0yfUZVF_hS9WzZnSjz9WAch4v7KQ7xWmY29va2llg6dleHBpcmVz1_9xucUAaCiXW65vcmlnaW5hbE1heEFnZc4PcxQAqHNhbWVTaXRlpG5vbmU.iz%2BIwgWoCwwOrjGKlSWzJ9UAa%2BmJfDzoIuyqg7GQaUY",
       "domain": "dev-sillsdev.auth0.com",
       "path": "/",
-      "expires": 1747484399.616302,
+      "expires": 1747490641.754735,
       "httpOnly": true,
       "secure": true,
       "sameSite": "Lax"
     },
     {
       "name": "_cfuvid",
-      "value": "n3XbEuEgeRBRR4NqtCmgl.ETS5KwOZw_IN_CEzOhoyk-1747225209164-0.0.1.1-604800000",
+      "value": "m10B5qjaV2aKCzwdB8QFJIiQekyZRI3FdE1F5t2_hD4-1747231451590-0.0.1.1-604800000",
       "domain": ".auth0.com",
       "path": "/",
       "expires": -1,
@@ -102,30 +102,30 @@
     },
     {
       "name": "__Host-GAPS",
-      "value": "1:18H-uY0_g4IVTWwggsnTt4VAhWA4eQ:M6Y_QlDBOo5nOQko",
+      "value": "1:YNsboL5xoO9Jbpnk27LsRvKMdpeq:b8zwDGmXIK7eS4rY",
       "domain": "accounts.google.com",
       "path": "/",
-      "expires": 1781785208.087479,
+      "expires": 1781791449.780162,
       "httpOnly": true,
       "secure": true,
       "sameSite": "Lax"
     },
     {
       "name": "OTZ",
-      "value": "8082020_34_34__34_",
+      "value": "8082124_34_34__34_",
       "domain": "accounts.google.com",
       "path": "/",
-      "expires": 1749817208,
+      "expires": 1749823450,
       "httpOnly": false,
       "secure": true,
       "sameSite": "Lax"
     },
     {
       "name": "NID",
-      "value": "524=D0u6eukcQrLisVmlj7LbZ0pcDEuDT94ZrXPWMaQTyxZfZPLosdKghm3aCnnkdRa-yD3jd3ZqyBz79tDTjtLO0EqX-9GZ2nehhKTknawTxF72xgAKsrb-CdqnFEPPy4sCsDTL-n4OjMf534HnlNitqUNH_bR7tthoNkTm4F6uE46J738ZlAmjIBunau1QdpQ1",
+      "value": "524=CDvF6luiqzj7PE_0OfBEdPxWRe233HnngVrD0OgASbBC9WmzRO7x3M1Xln5iiZaFRogjNubzrm0dLgsB-pur9POJ64Fd3C6SlgFL3K5g7rF6OLu-Ou8Z9n9JiKSV98pLgN-ZSnQuyIaSzhKiiyx7CTPFvJAZEQ1WenWtG9VLqmBP4xpz-doAr-Ryr2ytiIHy",
       "domain": ".google.com",
       "path": "/",
-      "expires": 1763036409.421361,
+      "expires": 1763042651.14842,
       "httpOnly": true,
       "secure": true,
       "sameSite": "None"
@@ -137,7 +137,7 @@
       "localStorage": [
         {
           "name": "bugsnag-anonymous-id",
-          "value": "cmanwrrz7000035aloa0cfzki"
+          "value": "cmao0hkgz000035al7exfxuto"
         },
         {
           "name": "theme",
