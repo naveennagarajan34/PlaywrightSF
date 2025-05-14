@@ -1,0 +1,162 @@
+{
+  "cookies": [
+    {
+      "name": "_csrf",
+      "value": "i2IuH4sZspEgdY7mqNkRrub6",
+      "domain": "dev-sillsdev.auth0.com",
+      "path": "/usernamepassword/login",
+      "expires": 1748089199.918707,
+      "httpOnly": true,
+      "secure": true,
+      "sameSite": "Lax"
+    },
+    {
+      "name": ".AspNetCore.Antiforgery.NGLNH2tSY-I",
+      "value": "CfDJ8HGAO1rqZodEiqVbnudAlBtUZ0LshlCnrwLjzUnbRGWx-gJXwRltkiy9SZzL_knKwJ7k0_Avrpe00pYLudWgPc0QcXTP4zqH1eFLJZXepqX_BgVKe4T-ZKqAeEaWr0fcseeAQ0l_QuvD2jMvBMoFMDE",
+      "domain": "qa.scriptureforge.org",
+      "path": "/",
+      "expires": -1,
+      "httpOnly": true,
+      "secure": false,
+      "sameSite": "Strict"
+    },
+    {
+      "name": ".AspNetCore.Culture",
+      "value": "c%3Den%7Cuic%3Den",
+      "domain": "qa.scriptureforge.org",
+      "path": "/",
+      "expires": 1778761199,
+      "httpOnly": false,
+      "secure": true,
+      "sameSite": "Strict"
+    },
+    {
+      "name": "_ga_SVKBDV7K3Q",
+      "value": "GS2.1.s1747225199$o1$g0$t1747225199$j0$l0$h0",
+      "domain": ".scriptureforge.org",
+      "path": "/",
+      "expires": 1781785199.42801,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "_ga",
+      "value": "GA1.1.1815854903.1747225199",
+      "domain": ".scriptureforge.org",
+      "path": "/",
+      "expires": 1781785199.428155,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "did",
+      "value": "s%3Av0%3A9299589d-fdac-4f8c-90cb-d30cb0f07baa.dtGIdTma0bs8ftbCz5szCzUCpl9IOZKchN%2BduZB2bGI",
+      "domain": "dev-sillsdev.auth0.com",
+      "path": "/",
+      "expires": 1778782799.616175,
+      "httpOnly": true,
+      "secure": true,
+      "sameSite": "None"
+    },
+    {
+      "name": "auth0",
+      "value": "s%3Av1.gadzZXNzaW9ugqZoYW5kbGXEQBetJWZvcOg_NckXEhGPU4bXXpZpe2xmlGBYajjIT6dpSZ8BgIFcxAfmxGctnoK4NrkD8rpcY4bkd60FX3_YcK2mY29va2llg6dleHBpcmVz1_8NHO8AaCh--a5vcmlnaW5hbE1heEFnZc4PcxQAqHNhbWVTaXRlpG5vbmU.9TfJyuvnhX8yuX1nVEl%2F1zC6F%2F6s1JYx79J73A8Q7pI",
+      "domain": "dev-sillsdev.auth0.com",
+      "path": "/",
+      "expires": 1747484399.616256,
+      "httpOnly": true,
+      "secure": true,
+      "sameSite": "None"
+    },
+    {
+      "name": "did_compat",
+      "value": "s%3Av0%3A9299589d-fdac-4f8c-90cb-d30cb0f07baa.dtGIdTma0bs8ftbCz5szCzUCpl9IOZKchN%2BduZB2bGI",
+      "domain": "dev-sillsdev.auth0.com",
+      "path": "/",
+      "expires": 1778782799.616281,
+      "httpOnly": true,
+      "secure": true,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "auth0_compat",
+      "value": "s%3Av1.gadzZXNzaW9ugqZoYW5kbGXEQBetJWZvcOg_NckXEhGPU4bXXpZpe2xmlGBYajjIT6dpSZ8BgIFcxAfmxGctnoK4NrkD8rpcY4bkd60FX3_YcK2mY29va2llg6dleHBpcmVz1_8NHO8AaCh--a5vcmlnaW5hbE1heEFnZc4PcxQAqHNhbWVTaXRlpG5vbmU.9TfJyuvnhX8yuX1nVEl%2F1zC6F%2F6s1JYx79J73A8Q7pI",
+      "domain": "dev-sillsdev.auth0.com",
+      "path": "/",
+      "expires": 1747484399.616302,
+      "httpOnly": true,
+      "secure": true,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "_cfuvid",
+      "value": "n3XbEuEgeRBRR4NqtCmgl.ETS5KwOZw_IN_CEzOhoyk-1747225209164-0.0.1.1-604800000",
+      "domain": ".auth0.com",
+      "path": "/",
+      "expires": -1,
+      "httpOnly": true,
+      "secure": true,
+      "sameSite": "None"
+    },
+    {
+      "name": "__Host-GAPS",
+      "value": "1:18H-uY0_g4IVTWwggsnTt4VAhWA4eQ:M6Y_QlDBOo5nOQko",
+      "domain": "accounts.google.com",
+      "path": "/",
+      "expires": 1781785208.087479,
+      "httpOnly": true,
+      "secure": true,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "OTZ",
+      "value": "8082020_34_34__34_",
+      "domain": "accounts.google.com",
+      "path": "/",
+      "expires": 1749817208,
+      "httpOnly": false,
+      "secure": true,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "NID",
+      "value": "524=D0u6eukcQrLisVmlj7LbZ0pcDEuDT94ZrXPWMaQTyxZfZPLosdKghm3aCnnkdRa-yD3jd3ZqyBz79tDTjtLO0EqX-9GZ2nehhKTknawTxF72xgAKsrb-CdqnFEPPy4sCsDTL-n4OjMf534HnlNitqUNH_bR7tthoNkTm4F6uE46J738ZlAmjIBunau1QdpQ1",
+      "domain": ".google.com",
+      "path": "/",
+      "expires": 1763036409.421361,
+      "httpOnly": true,
+      "secure": true,
+      "sameSite": "None"
+    }
+  ],
+  "origins": [
+    {
+      "origin": "https://qa.scriptureforge.org",
+      "localStorage": [
+        {
+          "name": "bugsnag-anonymous-id",
+          "value": "cmanwrrz7000035aloa0cfzki"
+        },
+        {
+          "name": "theme",
+          "value": "\"theme-default\""
+        }
+      ]
+    },
+    {
+      "origin": "https://registry.paratext.org",
+      "localStorage": [
+        {
+          "name": "email",
+          "value": "naveen.n@ecgroup-intl.com"
+        },
+        {
+          "name": "loginType",
+          "value": "google"
+        }
+      ]
+    }
+  ]
+}

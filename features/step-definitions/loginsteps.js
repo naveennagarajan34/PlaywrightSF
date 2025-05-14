@@ -1,5 +1,6 @@
 const { Given, When, Then } = require("@cucumber/cucumber");
 const { expect } = require("@playwright/test");
+const fs = require("fs");
 
 Given("I launch Scripture Forge", async function () {
   await this.page.goto("https://qa.scriptureforge.org");
@@ -15,8 +16,10 @@ When("I login with {string} and {string}", async function (email, password) {
   await this.page.locator("//*[@id='password-group']/button").click();
   expect(
     await this.page.locator("//span[contains(text(),'Next')]/parent::button")
-  ).toBeVisible();
-  await this.page.waitForTimeout(3000);
+  ).toBeVisible({
+    timeout: 10000,
+  });
+  await this.page.waitForTimeout(2000);
   await this.page
     .locator("//span[contains(text(),'Next')]/parent::button")
     .click();
@@ -24,17 +27,20 @@ When("I login with {string} and {string}", async function (email, password) {
   await this.page
     .locator("//span[contains(text(),'Next')]/parent::button")
     .click();
+  // await this.page.waitForNavigation();
+  // await this.saveSessionState(); // Save session after login
 });
 
 Then("I should be redirected to the project dashboard", async function () {
   await expect(this.page.locator("mat-icon.notranslate").first()).toBeVisible({
-    timeout: 15000,
-  }); // waits up to 15s
-  await this.page.waitForTimeout(30000);
+    timeout: 30000,
+  }); // waits up to 30s
 });
 
 Then("logout the application", async function () {
   await this.page
     .locator("button.user-menu-btn span.mat-mdc-button-touch-target")
     .click();
+  await this.page.locator("#log-out-link").click();
+  await this.page.waitForTimeout(20000);
 });

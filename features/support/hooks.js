@@ -1,12 +1,13 @@
-const { Before, After, setDefaultTimeout } = require("@cucumber/cucumber");
+const { Before, AfterAll, setDefaultTimeout } = require("@cucumber/cucumber");
 
 Before(async function () {
-  await this.launchBrowser();
+  await this.initBrowser(); // `this` refers to the CustomWorld instance
 });
 
-After(async function () {
-  await this.closeBrowser();
+AfterAll(async function () {
+  if (this.browser) {
+    await this.browser.close();
+  }
 });
 
-// Set timeout to 90 seconds (or any desired value)
-setDefaultTimeout(90 * 1000); // 90,000 milliseconds
+setDefaultTimeout(60 * 1000);
