@@ -1,16 +1,42 @@
-const { Before, AfterAll, setDefaultTimeout } = require("@cucumber/cucumber");
+const {
+  BeforeAll,
+  AfterAll,
+  Before,
+  setDefaultTimeout,
+} = require("@cucumber/cucumber");
+const { chromium } = require("@playwright/test");
 
-// Initialize browser before each scenario
-Before(async function () {
-  await this.initBrowser(); // Ensure this refers to the CustomWorld instance
+let browser;
+let context;
+let page;
+
+BeforeAll(async function () {
+  browser = await chromium.launch({ headless: false });
+  context = await browser.newContext();
+  page = await context.newPage();
+
+  // Login once
+  await page.goto("https://qa.scriptureforge.org/");
+  await page.locator("a.mdl-button", { hasText: "LOG IN" }).click();
+  await page
+    .locator("div.auth0-lock-social-button-text", { hasText: "Paratext" })
+    .click();
+  await page.locator("input#email").fill("naveen.n@ecgroup-intl.com");
+  await page.locator("//*[@id='password-group']/button").click();
+  await page.waitForSelector("//span[contains(text(),'Next')]/parent::button");
+  await page.locator("//span[contains(text(),'Next')]/parent::button").click();
+  await page.locator("input[type='password']").fill("naveT23LMN#23");
+  await page.locator("//span[contains(text(),'Next')]/parent::button").click();
 });
 
-// Close the browser after all tests are done
+Before(function () {
+  this.browser = browser;
+  this.context = context;
+  this.page = page;
+});
+
 AfterAll(async function () {
-  if (this.browser) {
-    await this.browser.close();
-  }
+  await browser.close();
 });
 
-// Set the default timeout for the tests
 setDefaultTimeout(60 * 1000);

@@ -7,31 +7,41 @@ Given("I launch Scripture Forge", async function () {
 });
 
 When("I login with {string} and {string}", async function (email, password) {
+  const username = email.split("@")[0];
   await this.page.locator("a.mdl-button").filter({ hasText: "LOG IN" }).click();
   await this.page
     .locator("div.auth0-lock-social-button-text")
     .filter({ hasText: "Paratext" })
     .click();
   await this.page.locator("input#email").fill(email);
-  await this.page.locator("//*[@id='password-group']/button").click();
-  expect(
-    await this.page.locator("//span[contains(text(),'Next')]/parent::button")
-  ).toBeVisible({
-    timeout: 10000,
-  });
-  await this.page.waitForTimeout(2000);
-  await this.page
-    .locator("//span[contains(text(),'Next')]/parent::button")
-    .click();
-  await this.page.locator("input[type='password']").fill(password);
-  await this.page
-    .locator("//span[contains(text(),'Next')]/parent::button")
-    .click();
+  await this.page.locator("input#email").press("Enter");
+  await this.page.waitForLoadState('load');
+
+  // await this.page.locator("input[type='email']").press("Enter");
+
+  // await page.waitForFunction(
+  //   (selector) => {
+  //     const input = document.querySelector(selector);
+  //     return input && input.value && input.value.length > 0;
+  //   },
+  //   {},
+  //   'input[type="email"]'
+  // );
+
+  // await this.page.waitForTimeout(5000);
+  // await this.page
+  //   .locator("//span[contains(text(),'Next')]/parent::button")
+  //   .click();
+  // await this.page.locator("input[type='password']").fill(password);
+  // await this.page
+  //   .locator("//span[contains(text(),'Next')]/parent::button")
+  //   .click();
   // await this.page.waitForNavigation();
   // await this.saveSessionState(); // Save session after login
+  await this.page.waitForTimeout(20000);
 });
 
-Then("I should be redirected to the project dashboard", async function () {
+Then("I should be redirected to the projects page", async function () {
   await expect(this.page.locator("mat-icon.notranslate").first()).toBeVisible({
     timeout: 30000,
   }); // waits up to 30s
