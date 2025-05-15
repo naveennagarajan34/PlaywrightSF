@@ -6,40 +6,32 @@ Given("I launch Scripture forge", async function () {
   await this.page.goto("https://qa.scriptureforge.org");
 });
 
-When("I login with {string} and {string}", async function (email, password) {
-  const username = email.split("@")[0];
-  await this.page.locator("a.mdl-button").filter({ hasText: "LOG IN" }).click();
-  await this.page
-    .locator("div.auth0-lock-social-button-text")
-    .filter({ hasText: "Paratext" })
-    .click();
-  await this.page.locator("input#email").fill(email);
-  await this.page.locator("input#email").press("Enter");
-  await this.page.waitForLoadState("load");
+When(
+  "I login with paratext using {string} and {string}",
+  async function (email, password) {
+    const username = email.split("@")[0];
+    await this.page
+      .locator("a.mdl-button")
+      .filter({ hasText: "LOG IN" })
+      .click();
+    await this.page
+      .locator("div.auth0-lock-social-button-text")
+      .filter({ hasText: "Paratext" })
+      .click();
+    await this.page.locator("input#email").fill(email);
+    await this.page.locator("input#email").press("Enter");
+    await this.page.waitForLoadState("load");
 
-  // await this.page.locator("input[type='email']").press("Enter");
-
-  // await page.waitForFunction(
-  //   (selector) => {
-  //     const input = document.querySelector(selector);
-  //     return input && input.value && input.value.length > 0;
-  //   },
-  //   {},
-  //   'input[type="email"]'
-  // );
-
-  // await this.page.waitForTimeout(5000);
-  // await this.page
-  //   .locator("//span[contains(text(),'Next')]/parent::button")
-  //   .click();
-  // await this.page.locator("input[type='password']").fill(password);
-  // await this.page
-  //   .locator("//span[contains(text(),'Next')]/parent::button")
-  //   .click();
-  // await this.page.waitForNavigation();
-  // await this.saveSessionState(); // Save session after login
-  await this.page.waitForTimeout(20000);
-});
+    await this.page
+      .locator("//span[contains(text(),'Next')]/parent::button")
+      .click();
+    await this.page.locator("input[type='password']").fill(password);
+    await this.page
+      .locator("//span[contains(text(),'Next')]/parent::button")
+      .click();
+    await this.page.waitForTimeout(2000);
+  }
+);
 
 Then("I should be redirected to the projects page", async function () {
   await expect(this.page.locator("mat-icon.notranslate").first()).toBeVisible({
@@ -52,5 +44,12 @@ Then("logout the application", async function () {
     .locator("button.user-menu-btn span.mat-mdc-button-touch-target")
     .click();
   await this.page.locator("#log-out-link").click();
-  await this.page.waitForTimeout(20000);
+  // await this.page.waitForTimeout(20000);
+});
+
+When("I login with {string} and {string}", async function (email, password) {
+  await this.page.locator("div.login-buttons a.mdl-button--raised").click();
+  await this.page.locator("input[type='email']").fill(email);
+  await this.page.locator("input[type='password']").fill(password);
+  await this.page.locator("button[type='submit']").click();
 });
