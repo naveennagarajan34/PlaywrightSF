@@ -2,8 +2,8 @@ const { Given, When, Then } = require("@cucumber/cucumber");
 const { expect } = require("@playwright/test");
 const fs = require("fs");
 
-Given("I launch Scripture Forge", async function () {
-  // await this.page.goto("https://qa.scriptureforge.org");
+Given("I launch Scripture forge", async function () {
+  await this.page.goto("https://qa.scriptureforge.org");
 });
 
 When("I login with {string} and {string}", async function (email, password) {
@@ -15,7 +15,7 @@ When("I login with {string} and {string}", async function (email, password) {
     .click();
   await this.page.locator("input#email").fill(email);
   await this.page.locator("input#email").press("Enter");
-  await this.page.waitForLoadState('load');
+  await this.page.waitForLoadState("load");
 
   // await this.page.locator("input[type='email']").press("Enter");
 

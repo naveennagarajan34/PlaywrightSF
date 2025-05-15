@@ -11,22 +11,13 @@ let context;
 let page;
 
 BeforeAll(async function () {
-  browser = await chromium.launch({ headless: false });
+  // browser = await chromium.launch({ headless: false });
+  browser = await chromium.launch({ headless: true });
   context = await browser.newContext();
   page = await context.newPage();
 
-  // Login once
+  // Skip login — you can navigate directly to any protected or public page here
   await page.goto("https://qa.scriptureforge.org/");
-  await page.locator("a.mdl-button", { hasText: "LOG IN" }).click();
-  await page
-    .locator("div.auth0-lock-social-button-text", { hasText: "Paratext" })
-    .click();
-  await page.locator("input#email").fill("naveen.n@ecgroup-intl.com");
-  await page.locator("//*[@id='password-group']/button").click();
-  await page.waitForSelector("//span[contains(text(),'Next')]/parent::button");
-  await page.locator("//span[contains(text(),'Next')]/parent::button").click();
-  await page.locator("input[type='password']").fill("naveT23LMN#23");
-  await page.locator("//span[contains(text(),'Next')]/parent::button").click();
 });
 
 Before(function () {
@@ -36,7 +27,9 @@ Before(function () {
 });
 
 AfterAll(async function () {
-  await browser.close();
+  if (browser) {
+    await browser.close();
+  }
 });
 
 setDefaultTimeout(60 * 1000);
