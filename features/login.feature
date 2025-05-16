@@ -1,15 +1,14 @@
 # features/login.feature
 Feature: Login to Scripture Forge
 
-    @High
-    Scenario: Valid login
-        Given I launch Scripture forge
-        When I login with paratext using "naveen.n@ecgroup-intl.com" and "naveT23LMN#23"
-        Then I should be redirected to the projects page
-        Then logout the application
+    # @test
+    # Scenario: Verify login
+    #     Given I launch Scripture forge
+    #     When I login with paratext using "naveen.n@ecgroup-intl.com" and "naveT23LMN#23"
+    #     Then I should be redirected to the projects page
 
     @High
-    Scenario Outline: Login and verify Logout
+    Scenario Outline: Login with paratext and verify Logout
         Given I launch Scripture forge
         When I login with "<email>" and "<password>"
         Then I should be redirected to the projects page

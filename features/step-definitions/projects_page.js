@@ -23,6 +23,11 @@ When(
   }
 );
 
+When("I click the on the project {string}", function (projectCode) {
+  // Write code here that turns the phrase above into concrete actions
+  // return "pending";
+});
+
 Then("I should be redirected inside the project", async function () {
   expect(await this.page.locator("app-navigation")).toBeVisible({
     timeout: 10000,
