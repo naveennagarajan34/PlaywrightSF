@@ -2,17 +2,17 @@
   "cookies": [
     {
       "name": "_csrf",
-      "value": "WJt7520mI4R96u_F0RN3jjx4",
+      "value": "FNmKlRHzxf4ue-DzqMXn2Epu",
       "domain": "dev-sillsdev.auth0.com",
       "path": "/usernamepassword/login",
-      "expires": 1748095442.098007,
+      "expires": 1748384703.633974,
       "httpOnly": true,
       "secure": true,
       "sameSite": "Lax"
     },
     {
       "name": ".AspNetCore.Antiforgery.NGLNH2tSY-I",
-      "value": "CfDJ8HGAO1rqZodEiqVbnudAlBtnox4UTU8Y6SVB9M4kr_7Vz4LnOJ5QcsKEwYzVFbwCPFAPnOPYArB8NRnUr2ockKVLtKr9nOVl7yUo0TrMcep4eLY8crr_FzqzxGQNOCtbnGBkBixIcZI0PQSNs9OZ8s0",
+      "value": "CfDJ8M6zQEDnJiRGlhuaHlxLCnASAXxo-m7pYxkNTTbIjhj6WkzQQgg8ACN3eAhl_u9Y9cvrEM_hic1_8YdKuKzPyy_IprJ8xVu68U8_Kt4xeStAln1_Yh_Lu37rrMbdRDDf5lofykHW7SovK4Z_RWZiyrU",
       "domain": "qa.scriptureforge.org",
       "path": "/",
       "expires": -1,
@@ -21,78 +21,68 @@
       "sameSite": "Strict"
     },
     {
+      "name": "_ga",
+      "value": "GA1.1.1395715307.1747520702",
+      "domain": ".scriptureforge.org",
+      "path": "/",
+      "expires": 1782080701.972292,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
       "name": ".AspNetCore.Culture",
       "value": "c%3Den%7Cuic%3Den",
       "domain": "qa.scriptureforge.org",
       "path": "/",
-      "expires": 1778767441,
+      "expires": 1779056702,
       "httpOnly": false,
       "secure": true,
       "sameSite": "Strict"
     },
     {
-      "name": "_ga_SVKBDV7K3Q",
-      "value": "GS2.1.s1747231441$o1$g0$t1747231441$j0$l0$h0",
-      "domain": ".scriptureforge.org",
-      "path": "/",
-      "expires": 1781791441.616194,
-      "httpOnly": false,
-      "secure": false,
-      "sameSite": "Lax"
-    },
-    {
-      "name": "_ga",
-      "value": "GA1.1.1580268253.1747231442",
-      "domain": ".scriptureforge.org",
-      "path": "/",
-      "expires": 1781791441.616359,
-      "httpOnly": false,
-      "secure": false,
-      "sameSite": "Lax"
-    },
-    {
       "name": "did",
-      "value": "s%3Av0%3Aa70b11d2-7e0c-4f78-b151-040e9d4ec7df.3TwHyQKqY6QOoCEK5yZ83LFf6fZwpYCBqY8sWwWO7y0",
+      "value": "s%3Av0%3A61c4c854-6a1d-4cb4-a501-640fca6be3dd.x7RHNO%2BzEZ%2BUT7PAMo5%2FMt6AqMgFpVDIDiItmq0EepQ",
       "domain": "dev-sillsdev.auth0.com",
       "path": "/",
-      "expires": 1778789041.754605,
+      "expires": 1779078303.245473,
       "httpOnly": true,
       "secure": true,
       "sameSite": "None"
     },
     {
       "name": "auth0",
-      "value": "s%3Av1.gadzZXNzaW9ugqZoYW5kbGXEQKrYsNa5uVukWGjLxKOS-nhvZ_J13gAaqPKN2Gteb9RxxMVL-eGZLaUl0yfUZVF_hS9WzZnSjz9WAch4v7KQ7xWmY29va2llg6dleHBpcmVz1_9xucUAaCiXW65vcmlnaW5hbE1heEFnZc4PcxQAqHNhbWVTaXRlpG5vbmU.iz%2BIwgWoCwwOrjGKlSWzJ9UAa%2BmJfDzoIuyqg7GQaUY",
+      "value": "s%3Av1.gadzZXNzaW9ugqZoYW5kbGXEQGc70sAwgQJadTNPnI0qCIBO8JUbqitCmy1b5k1uFhrYP232eBVMqCeXMz9i_VMmv28a1eqoA_fkKxFzt57c0vKmY29va2llg6dleHBpcmVz1_-afsgAaC0BP65vcmlnaW5hbE1heEFnZc4PcxQAqHNhbWVTaXRlpG5vbmU.qhjlwcVGeSPjRG5YxqTSx4iebceztb1HAWWvuYKop%2BU",
       "domain": "dev-sillsdev.auth0.com",
       "path": "/",
-      "expires": 1747490641.754683,
+      "expires": 1747779903.245549,
       "httpOnly": true,
       "secure": true,
       "sameSite": "None"
     },
     {
       "name": "did_compat",
-      "value": "s%3Av0%3Aa70b11d2-7e0c-4f78-b151-040e9d4ec7df.3TwHyQKqY6QOoCEK5yZ83LFf6fZwpYCBqY8sWwWO7y0",
+      "value": "s%3Av0%3A61c4c854-6a1d-4cb4-a501-640fca6be3dd.x7RHNO%2BzEZ%2BUT7PAMo5%2FMt6AqMgFpVDIDiItmq0EepQ",
       "domain": "dev-sillsdev.auth0.com",
       "path": "/",
-      "expires": 1778789041.754711,
+      "expires": 1779078303.245573,
       "httpOnly": true,
       "secure": true,
       "sameSite": "Lax"
     },
     {
       "name": "auth0_compat",
-      "value": "s%3Av1.gadzZXNzaW9ugqZoYW5kbGXEQKrYsNa5uVukWGjLxKOS-nhvZ_J13gAaqPKN2Gteb9RxxMVL-eGZLaUl0yfUZVF_hS9WzZnSjz9WAch4v7KQ7xWmY29va2llg6dleHBpcmVz1_9xucUAaCiXW65vcmlnaW5hbE1heEFnZc4PcxQAqHNhbWVTaXRlpG5vbmU.iz%2BIwgWoCwwOrjGKlSWzJ9UAa%2BmJfDzoIuyqg7GQaUY",
+      "value": "s%3Av1.gadzZXNzaW9ugqZoYW5kbGXEQGc70sAwgQJadTNPnI0qCIBO8JUbqitCmy1b5k1uFhrYP232eBVMqCeXMz9i_VMmv28a1eqoA_fkKxFzt57c0vKmY29va2llg6dleHBpcmVz1_-afsgAaC0BP65vcmlnaW5hbE1heEFnZc4PcxQAqHNhbWVTaXRlpG5vbmU.qhjlwcVGeSPjRG5YxqTSx4iebceztb1HAWWvuYKop%2BU",
       "domain": "dev-sillsdev.auth0.com",
       "path": "/",
-      "expires": 1747490641.754735,
+      "expires": 1747779903.24559,
       "httpOnly": true,
       "secure": true,
       "sameSite": "Lax"
     },
     {
       "name": "_cfuvid",
-      "value": "m10B5qjaV2aKCzwdB8QFJIiQekyZRI3FdE1F5t2_hD4-1747231451590-0.0.1.1-604800000",
+      "value": "NrcG3ubL0IdbCfyUOQkFpg0LXTE_plHsIjxVUnztP14-1747520703759-0.0.1.1-604800000",
       "domain": ".auth0.com",
       "path": "/",
       "expires": -1,
@@ -101,34 +91,14 @@
       "sameSite": "None"
     },
     {
-      "name": "__Host-GAPS",
-      "value": "1:YNsboL5xoO9Jbpnk27LsRvKMdpeq:b8zwDGmXIK7eS4rY",
-      "domain": "accounts.google.com",
+      "name": "_ga_SVKBDV7K3Q",
+      "value": "GS2.1.s1747520701$o1$g0$t1747520703$j0$l0$h0",
+      "domain": ".scriptureforge.org",
       "path": "/",
-      "expires": 1781791449.780162,
-      "httpOnly": true,
-      "secure": true,
-      "sameSite": "Lax"
-    },
-    {
-      "name": "OTZ",
-      "value": "8082124_34_34__34_",
-      "domain": "accounts.google.com",
-      "path": "/",
-      "expires": 1749823450,
+      "expires": 1782080703.650369,
       "httpOnly": false,
-      "secure": true,
+      "secure": false,
       "sameSite": "Lax"
-    },
-    {
-      "name": "NID",
-      "value": "524=CDvF6luiqzj7PE_0OfBEdPxWRe233HnngVrD0OgASbBC9WmzRO7x3M1Xln5iiZaFRogjNubzrm0dLgsB-pur9POJ64Fd3C6SlgFL3K5g7rF6OLu-Ou8Z9n9JiKSV98pLgN-ZSnQuyIaSzhKiiyx7CTPFvJAZEQ1WenWtG9VLqmBP4xpz-doAr-Ryr2ytiIHy",
-      "domain": ".google.com",
-      "path": "/",
-      "expires": 1763042651.14842,
-      "httpOnly": true,
-      "secure": true,
-      "sameSite": "None"
     }
   ],
   "origins": [
@@ -137,24 +107,11 @@
       "localStorage": [
         {
           "name": "bugsnag-anonymous-id",
-          "value": "cmao0hkgz000035al7exfxuto"
+          "value": "cmasspftd000035at3fpb2uxr"
         },
         {
           "name": "theme",
           "value": "\"theme-default\""
-        }
-      ]
-    },
-    {
-      "origin": "https://registry.paratext.org",
-      "localStorage": [
-        {
-          "name": "email",
-          "value": "naveen.n@ecgroup-intl.com"
-        },
-        {
-          "name": "loginType",
-          "value": "google"
         }
       ]
     }

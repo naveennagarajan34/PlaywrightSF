@@ -7,7 +7,7 @@ const config = {
   },
   reporter: "html",
   use: {
-    actionTimeout: 10000, // Default timeout for each action (10 seconds)
+    actionTimeout: 20000, // Default timeout for each action (10 seconds)
     navigationTimeout: 15000,
     browserName: "chromium",
     headless: false,

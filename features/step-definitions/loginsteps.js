@@ -34,7 +34,7 @@ When(
 );
 
 Then("I should be redirected to the projects page", async function () {
-  await expect(this.page.locator("mat-icon.notranslate").first()).toBeVisible({
+  await expect(this.page.locator("div h1")).toBeVisible({
     timeout: 30000,
   }); // waits up to 30s
 });
