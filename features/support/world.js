@@ -1,10 +1,13 @@
-const { setWorldConstructor } = require("@cucumber/cucumber");
+const { setWorldConstructor } = require('@cucumber/cucumber');
+const browserManager = require('./browserManager');
 
 class CustomWorld {
   constructor() {
-    this.browser = null;
-    this.context = null;
     this.page = null;
+  }
+
+  async createNewTab() {
+    this.page = await browserManager.newTab();
   }
 }
 

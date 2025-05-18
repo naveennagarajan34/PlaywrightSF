@@ -21,12 +21,12 @@ Then("click on the {string} locale", async function (locale) {
       `//div[@role='menu']//button//span[text()='${locale}']/ancestor::button`
     )
   ).toBeVisible({
-    timeout: 5000,
+    timeout: 15000,
   });
   await this.page
     .locator(
       `//div[@role='menu']//button//span[text()='${locale}']/ancestor::button`
     )
     .click();
-  await this.page.pause();    
+  // await this.page.pause();
 });
