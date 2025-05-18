@@ -28,5 +28,5 @@ Then("click on the {string} locale", async function (locale) {
       `//div[@role='menu']//button//span[text()='${locale}']/ancestor::button`
     )
     .click();
-  await this.page.pause();
+  await this.page.pause();    
 });
