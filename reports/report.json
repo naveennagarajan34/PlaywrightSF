@@ -1,0 +1,77 @@
+[
+  {
+    "description": "",
+    "elements": [
+      {
+        "description": "",
+        "id": "projects-page-functionalities;open-the-given-project",
+        "keyword": "Scenario Outline",
+        "line": 21,
+        "name": "Open the given project",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 87250500
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 15,
+            "name": "launch Scripture forge",
+            "match": {
+              "location": "features\\step-definitions\\projects_page.js:4"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1196568300
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 16,
+            "name": "I click the on the project \"PDR\"",
+            "match": {
+              "location": "features\\step-definitions\\projects_page.js:30"
+            },
+            "result": {
+              "status": "failed",
+              "duration": 5011235099,
+              "error_message": "Error: function timed out, ensure the promise resolves within 5000 milliseconds\n    at Timeout.<anonymous> (D:\\PlayWright\\PlaywrightSF\\node_modules\\@cucumber\\cucumber\\lib\\time.js:54:20)\n    at listOnTimeout (node:internal/timers:608:17)\n    at process.processTimers (node:internal/timers:543:7)"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 17,
+            "name": "I should be redirected inside the project",
+            "match": {
+              "location": "features\\step-definitions\\projects_page.js:39"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@test",
+            "line": 13
+          }
+        ],
+        "type": "scenario"
+      }
+    ],
+    "id": "projects-page-functionalities",
+    "line": 1,
+    "keyword": "Feature",
+    "name": "Projects page functionalities",
+    "tags": [],
+    "uri": "features\\project_page.feature"
+  }
+]
