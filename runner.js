@@ -11,6 +11,7 @@ exec(command, (err, stdout, stderr) => {
   if (err) {
     console.error("❌ Test execution failed:");
     console.error(stderr);
+    console.log(err);
     return;
   }
   console.log("✅ Test output:");

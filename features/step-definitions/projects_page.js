@@ -28,12 +28,17 @@ When(
 );
 
 When("I click the on the project {string}", async function (projectCode) {
+  // const cardLocator = this.page.locator(
+  //   `//mat-card//b[contains(text(),'${projectCode}')]/ancestor::mat-card`
+  // );
+  // await cardLocator.waitFor({ state: "attached", timeout: 20000 }).click(); // waits up to 20 seconds
+
   await this.page
     .locator(
       `//mat-card//b[contains(text(),'${projectCode}')]/ancestor::mat-card`
     )
     .click();
-  await this.page.waitForTimeout(5000);
+  // await this.page.waitForTimeout(5000);
 });
 
 Then("I should be redirected inside the project", async function () {
