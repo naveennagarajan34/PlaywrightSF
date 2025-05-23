@@ -13,11 +13,11 @@ Before(async function () {
   await this.createNewTab(); // this is the CustomWorld instance
 });
 
-AfterAll(async function () {
-  // await browserManager.closeBrowser(); // Optional: close at end
-  if (this.context) await this.context.close();
-  if (this.browser) await this.browser.close();
+// AfterAll(async function () {
+//   // await browserManager.closeBrowser(); // Optional: close at end
+//   // if (this.context) await this.context.close();
+//   // if (this.browser) await this.browser.close();
 
-  console.log("Exiting Program.");
-  process.exit(0); // force exit
-});
+//   console.log("Exiting Program.");
+//   process.exit(0); // force exit
+// });
