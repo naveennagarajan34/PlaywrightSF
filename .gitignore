@@ -5,6 +5,8 @@ node_modules/
 build/
 dist/
 
+storageState.json
+
 # Playwright-specific
 test-results/
 playwright-report/
