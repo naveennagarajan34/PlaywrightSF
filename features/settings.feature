@@ -1,7 +1,5 @@
-Feature: Projects page functionalities
+Feature: Settings page functionalities
 
-
-    @testrun
     Scenario Outline: Add source to project
 
         Given launch Scripture forge
@@ -14,3 +12,17 @@ Feature: Projects page functionalities
         Examples:
             | project | source |
             | PDR     | EASY   |
+
+    @TestRun
+    Scenario Outline: Enable Translation suggestions to project
+
+        Given launch Scripture forge
+        When I click the on the project "<project>"
+        Then I should be redirected inside the project
+        When I click on the settings
+        Then I should be navigated to settings page
+        When I click on the Translation suggestions checkbox "<enable/disable>" suggestions
+
+        Examples:
+            | project | enable/disable |
+            | PDR     | disable        |
