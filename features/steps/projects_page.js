@@ -7,8 +7,8 @@ Given("launch Scripture forge", async function () {
     await this.page.locator("mat-toolbar-row.mat-toolbar-row")
   ).toBeVisible({
     timeout: 20000,
-  });
-  //   await this.page.waitForTimeout(10000);
+  }); 
+  //   await this.page.waitForTimeout(10000); 
 });
 
 Given("user is on projects page", async function () {

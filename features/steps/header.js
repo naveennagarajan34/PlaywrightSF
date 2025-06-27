@@ -5,7 +5,7 @@ When("I click on the sf logo in the header", async function () {
   await this.page.locator("header a[href*='/projects']").click();
   const projectCode = "TLP";
 });
-
+ 
 When("user clicks on UI icon", async function () {
   await this.page
     .locator("//header//mat-icon[text()='translate']/ancestor::button")

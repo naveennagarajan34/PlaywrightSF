@@ -3,9 +3,11 @@ const { expect } = require("@playwright/test");
 const fs = require("fs");
 
 Given("I launch Scripture forge", async function () {
+  console.log("✅ steps.js is being loaded");
+
   await this.page.goto("https://qa.scriptureforge.org");
 });
-
+ 
 When(
   "I login with paratext using {string} and {string}",
   async function (email, password) {

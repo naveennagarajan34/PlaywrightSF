@@ -1,10 +1,8 @@
 module.exports = {
-  default: {
-    timeout: 60000,
-    require: [
-      "features/step-definitions/*.js",
-      "features/support/**/*.js", // ✅ include support files
-    ],
-    format: ["html:reports/report.html"],
-  },
+  default: [
+    '--require features/steps/*.js',       // Step definitions
+    '--require features/support/*.js',     // Hooks and World
+    '--format progress',                      // Optional: cleaner output
+    '--parallel 1'                            // Optional: run in single thread for shared context
+  ].join(' ')
 };

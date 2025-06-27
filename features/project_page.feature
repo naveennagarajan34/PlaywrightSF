@@ -10,7 +10,6 @@ Feature: Projects page functionalities
             | project |
             | PDR     |
 
-    @test
     Scenario Outline: Open the given project
         Given launch Scripture forge
         When I click the on the project "<project>"

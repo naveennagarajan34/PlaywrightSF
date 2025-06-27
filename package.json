@@ -3,7 +3,8 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "test": "cucumber-js"
+    "test": "cucumber-js",
+     "test:home": "cucumber-js features/home_page.feature --require steps/"
   },
   "keywords": [],
   "author": "",

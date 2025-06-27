@@ -7,7 +7,7 @@ When("click on help in the footer", async function () {
     .locator('li a[href="https://help.scriptureforge.org/"]')
     .filter({ hasText: "Help" })
     .click();
-});
+}); 
 
 When("click on learn more in the footer", async function () {
   await this.page.locator("//li/a[contains(text(),'Learn')]").click();
@@ -29,3 +29,4 @@ Then("verify the user is redirected to learn more page", async function () {
   actualTitle = await this.page.title();
   expect(actualTitle).toContain("Getting Started");
 });
+ 

@@ -1,0 +1,13 @@
+{
+  "cucumberautocomplete.steps": [
+    "features/steps/*.js"
+  ],
+  "cucumberautocomplete.syncfeatures": "features/*.feature",
+  "cucumberautocomplete.strictGherkinCompletion": true,
+  "cucumberautocomplete.smartSnippets": true,
+  "cucumberautocomplete.snippets": {
+    "Given": "Given('{step}', async function () {\n  // code\n});",
+    "When": "When('{step}', async function () {\n  // code\n});",
+    "Then": "Then('{step}', async function () {\n  // code\n});"
+  }
+}
