@@ -17,7 +17,7 @@ AfterAll(async function () {
   // await browserManager.closeBrowser(); // Optional: close at end
   if (this.context) await this.context.close();
   if (this.browser) await this.browser.close();
-
-  console.log("Exiting Program.");
+  console.log("");
+  console.log("Execution Completed.");
   process.exit(0); // force exit
 });

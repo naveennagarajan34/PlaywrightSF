@@ -25,7 +25,7 @@ Feature: Settings page functionalities
 
         Examples:
             | project | enable/disable |
-            | PDR     | enable        |
+            | PDR     | enable         |
 
 
     Scenario Outline: Enable or disable Community checking to project
@@ -39,9 +39,8 @@ Feature: Settings page functionalities
 
         Examples:
             | project | enable/disable |
-            | PDR     | enable        |
+            | PDR     | enable         |
 
-    @TestRun
     Scenario Outline: Enable or disable Biblical Terms to project
 
         Given launch Scripture forge
@@ -53,4 +52,16 @@ Feature: Settings page functionalities
 
         Examples:
             | project | enable/disable |
-            | PDR     | enable        |
+            | PDR     | enable         |
+
+    @TestRun
+    Scenario Outline: Delete the given Project
+        Given launch Scripture forge
+        When I click the Connect button on the project "<project>"
+        Then I should be redirected inside the project
+        When I click on the settings
+        Then Click on the delete button and confirm delete
+
+        Examples:
+            | project |
+            | TBT     |
