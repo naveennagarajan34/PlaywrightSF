@@ -1,5 +1,4 @@
 Feature: Header Functionalities
-  # @check
 
   Scenario Outline: Click on SF logo redirect to projects page
     Given user is on projects page
@@ -12,7 +11,6 @@ Feature: Header Functionalities
       | project |
       | TLP     |
 
-  @check
   Scenario Outline: Change the application UI
     Given user is on projects page
     When user clicks on UI icon
