@@ -3,7 +3,7 @@ const { expect } = require("@playwright/test");
 
 
 When('I click on the settings', async function () {
-    await this.page.waitForTimeout(2000);
+    await this.page.waitForTimeout(3000);
     await this.page.locator("//span[contains(text(),'Settings')]/../parent::a").click();
 });
 
@@ -71,4 +71,13 @@ When('I click on the Biblical terms checkbox to {string} feature', async functio
             await biblicalTerms.click();
         } else { }
     }
+})
+
+Then('Click on the delete button and confirm delete', async function() {
+    await this.page.locator('[type="button"][id="delete-btn"]').scrollIntoViewIfNeeded();
+    await this.page.locator('[type="button"][id="delete-btn"]').click();
+    const projectName = await this.page.locator('mat-dialog-content p strong').last().textContent();
+    await this.page.locator("mat-form-field[id='project-entry'] input").fill(projectName);
+    await this.page.locator("button[id='project-delete-btn']").click();
+    await this.page.pause();
 })
