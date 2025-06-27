@@ -22,3 +22,19 @@ When('I click on the source project field and select {string} as source', async 
     await this.page.pause();
     await this.page.waitForTimeout(30000); // Wait for 3 seconds
 })
+
+When('I click on the Translation suggestions checkbox {string} suggestions', async function (feature) {
+    const translationSuggestion = await this.page.locator("input[type='checkbox'][id='checkbox-translation-suggestions-input']");
+
+    // console.log(await translationSuggestion.isChecked());
+    if (feature === 'enable') {
+        if (!(await translationSuggestion.isChecked())) {
+            await translationSuggestion.click();
+        } else {}
+    } else {
+         if (await translationSuggestion.isChecked()) {
+            await translationSuggestion.click();
+        } else {}
+    }
+    await this.page.pause();
+})
